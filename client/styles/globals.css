@@ -2,3 +2,8 @@ body {
   background: #100f0f !important;
   color: #f3f4f6 !important;
 }
+
+a {
+  text-decoration: none !important;
+  color: #f3f4f6 !important;
+}

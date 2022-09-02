@@ -1,13 +1,12 @@
 import type { NextComponentType } from "next";
+import Link from "next/link";
 
 const Header: NextComponentType = () => {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-3">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
+          <Link href="/">Courselea</Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -22,10 +21,11 @@ const Header: NextComponentType = () => {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto">
-              <li className="nav-item active">
-                <a className="nav-link" href="#">
-                  Home
-                </a>
+              <li className="nav-item nav-link">
+                <Link href="/create-course">Create Course</Link>
+              </li>
+              <li className="nav-item nav-link">
+                <Link href="/learnings">My Learning</Link>
               </li>
             </ul>
           </div>
